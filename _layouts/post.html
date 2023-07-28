@@ -36,7 +36,7 @@ layout: default
     <div class="nav-link post-related">
       <div class="nav-meta">You might also like</div>
       <ul>
-        {% assign posts = site.posts | where_exp:"post", "post.url != page.url" | sample:4 %}
+        {% assign posts = site.posts | where_exp:"post", "post.url != page.url" | sample:10 %}
         {% for post in posts %}
           {% include related-post.html %}
         {% endfor %}
