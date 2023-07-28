@@ -20,7 +20,7 @@ collections:
     output: true
     permalink: /kr/:path:output_ext
 
-paginate: 6
+paginate: 50
 plugins:
   - jekyll-gist
   - jekyll-paginate
